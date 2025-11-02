@@ -1,3 +1,5 @@
+package Stack_Queue;
+
 class Stacks{
     private int top;
    private int [] stackie;

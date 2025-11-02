@@ -1,3 +1,5 @@
+package Volatile;
+
 class SharedObj{
     private volatile boolean flag=false;
 

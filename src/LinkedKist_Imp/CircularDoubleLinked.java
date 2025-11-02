@@ -1,3 +1,5 @@
+package LinkedKist_Imp;
+
 class Node{
     int val;
     Node next;

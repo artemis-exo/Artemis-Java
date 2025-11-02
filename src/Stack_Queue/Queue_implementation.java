@@ -1,3 +1,5 @@
+package Stack_Queue;
+
 class Queue{
    private int maxSize;
    private int front,rear;
@@ -11,7 +13,7 @@ class Queue{
    }
    public void Enqueue(int val){
        if(rear==maxSize-1){
-           System.out.println("Queue is full");
+           System.out.println("Stack_Queue.Queue is full");
        }
        else{
            queue[++rear]=val;
@@ -20,7 +22,7 @@ class Queue{
    }
    public int Dequeue(){
        if(front>rear){
-           System.out.println("Queue is empty");
+           System.out.println("Stack_Queue.Queue is empty");
            return -1;
        }
        else{
@@ -29,7 +31,7 @@ class Queue{
    }
    public int peek(){
        if(front>rear){
-           System.out.println("Queue is empty");
+           System.out.println("Stack_Queue.Queue is empty");
            return -1;
        }
        else{
@@ -38,10 +40,10 @@ class Queue{
    }
    public void display(){
        if(front>rear){
-           System.out.println("Queue is empty");
+           System.out.println("Stack_Queue.Queue is empty");
        }
        else{
-           System.out.println("The elements of Queue are: ");
+           System.out.println("The elements of Stack_Queue.Queue are: ");
            for(int i=front;i<=rear;i++){
                System.out.print(queue[i]+ " ");
            }

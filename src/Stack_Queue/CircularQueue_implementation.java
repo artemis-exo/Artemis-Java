@@ -1,3 +1,5 @@
+package Stack_Queue;
+
 class Circular_Queue{
     int [] Circular;
     int front;
@@ -20,7 +22,7 @@ class Circular_Queue{
    }
    void enqueue(int data){
        if(isFull()){
-           System.out.println("Queue is full! Cannot insert"+ data);
+           System.out.println("Stack_Queue.Queue is full! Cannot insert"+ data);
            return;
        }
        if(front ==-1){
@@ -33,7 +35,7 @@ class Circular_Queue{
    }
    int dequeue(){
        if(isEmpty()){
-           System.out.println("Queue is empty! Cannot be dequeued");
+           System.out.println("Stack_Queue.Queue is empty! Cannot be dequeued");
            return -1;
        }
        int res=Circular[front];
@@ -48,14 +50,14 @@ class Circular_Queue{
    }
    int peek(){
        if(isEmpty()){
-           System.out.println("Queue is empty! Cannot be dequeued");
+           System.out.println("Stack_Queue.Queue is empty! Cannot be dequeued");
            return -1;
        }
        return Circular[front];
    }
    void display(){
        if(isEmpty()){
-           System.out.println("Queue is empty! Cannot be dequeued");
+           System.out.println("Stack_Queue.Queue is empty! Cannot be dequeued");
            return;
        }
        System.out.println("The elements of queue are :");
