@@ -1,3 +1,5 @@
+package Methods;
+
 public class Methods_digest {
     public static void main(String[] args) {
         int [] a={3,5,7,8,90,4,5};

@@ -1,3 +1,5 @@
+package Methods;
+
 public class Methods_harry {
      static int logic(int x, int y){
         int z;
@@ -15,7 +17,7 @@ public class Methods_harry {
         int b=9;
         int c;
         // METHOD INVOCATION USING OBJECT CREATION (WITHOUT STATIC KEYWORD)
-//        Methods_harry obj= new Methods_harry();
+//        Methods.Methods_harry obj= new Methods.Methods_harry();
 //        c= obj.logic(a,b);
         c= logic(a,b);
         System.out.println(c);

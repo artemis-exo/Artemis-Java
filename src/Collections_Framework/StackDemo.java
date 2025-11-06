@@ -36,6 +36,7 @@ public class StackDemo {
         link.addLast(1);
         link.addLast(2);
         link.addLast(3);
+        System.out.println(link.isEmpty());
         System.out.println(link.getLast()); // peek
         System.out.println(link.removeLast());  // pop
         System.out.println(link.size());

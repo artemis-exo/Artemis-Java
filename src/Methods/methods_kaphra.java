@@ -1,3 +1,5 @@
+package Methods;
+
 import java.util.Scanner;
 public class methods_kaphra {
 //    static void printMyName(String name){   // VOID DOES'NT RETURN VALUE OF MAIN FUNCTION

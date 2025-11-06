@@ -1,3 +1,5 @@
+package Methods;
+
 import java.util.Scanner;
 public class method_Overloading {
     static int Multiply(int x , int y){  // CHANGING THE RETURN TYPE

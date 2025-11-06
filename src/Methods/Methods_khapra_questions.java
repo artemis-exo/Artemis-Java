@@ -1,3 +1,5 @@
+package Methods;
+
 import java.util.Scanner;
 public class Methods_khapra_questions {
     static int Prime(int x){
