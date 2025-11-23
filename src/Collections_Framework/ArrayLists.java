@@ -29,7 +29,10 @@ public class ArrayLists {
         String[] array={"Apple","Banana","Cherry"};
         List<String>list2= Arrays.asList(array);
         System.out.println(list2.getClass().getName());
+        list2.set(1,"Cherry");
+        System.out.println(list2.get(1));
 
+        // We are allowed to this in this because it is not asList
         List<String> list3=new ArrayList<>(list2);
         list3.add("Mango");
         System.out.println(list3);
