@@ -26,6 +26,7 @@ public class ArrayLists {
         List1.set(1,"Wednesday");
         System.out.println(List1.get(1));
 
+
         String[] array={"Apple","Banana","Cherry"};
         List<String>list2= Arrays.asList(array);
         System.out.println(list2.getClass().getName());

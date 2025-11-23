@@ -1,3 +1,5 @@
+package Inheritence;
+
 class base{
     base(){
         System.out.println("Iam a constructor ");
@@ -29,9 +31,9 @@ class ChildofDerived extends Derived{
 
 public class Inherit_cons_hy {
     public static void main(String[] args) {
-      //  base b=new base();
-       // Derived d=new Derived();
-        //Derived r=new Derived(4,7);
+      //  Inheritence.base b=new Inheritence.base();
+       // Inheritence.Derived d=new Inheritence.Derived();
+        //Inheritence.Derived r=new Inheritence.Derived(4,7);
         ChildofDerived chd=new ChildofDerived(12,14,16);
     }
 }

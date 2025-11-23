@@ -1,3 +1,5 @@
+package Inheritence;
+
 class Num {
     public void Addition(int x, int y) {
         int z = x + y;

@@ -10,11 +10,11 @@ public class LinkedList_1 {
         LinkedList.add(1);
         LinkedList.add(2);
         LinkedList.add(3);
-        LinkedList.get(2);  // O(n)
+        System.out.println(LinkedList.get(2));  // O(n)
         LinkedList.addLast(4);  // O(1)
         LinkedList.addFirst(0); // O(1)
-        LinkedList.getLast();
-        LinkedList.getFirst();
+        System.out.println(LinkedList.getLast());
+        System.out.println(LinkedList.getFirst());
         System.out.println(LinkedList);
         LinkedList.removeIf(x-> x%2==0);
         System.out.println(LinkedList);
