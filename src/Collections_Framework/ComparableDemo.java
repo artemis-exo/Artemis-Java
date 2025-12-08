@@ -2,7 +2,8 @@ package Collections_Framework;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// Comparable has compareTo() method
+// Comparator has compare() method
 public class ComparableDemo {
     public static void main(String[] args) {
         List<Student>list=new ArrayList<>();

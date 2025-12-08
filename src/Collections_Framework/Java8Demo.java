@@ -111,7 +111,6 @@ public class Java8Demo {
 
             // Constructor Reference
             List<String>names=Arrays.asList("A","B","C","D");
-            List<MobilePhone>collect= names.stream().map(x->new MobilePhone(x).collect())
 
 
 
