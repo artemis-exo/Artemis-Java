@@ -46,7 +46,7 @@ public class Main_std {
         students.add(new Student("Akshit",3.9));
 
 //   java 8 method for below return part short
-//        Comparator<Student> comparator=Comparator.comparing(Student::getGpa).reversed();
+//        Comparator<Student> comparator=Comparator.comparing(Student::getGpa).reversed().thenComparing(Student::getName);
 //        students.sort(comparator);
 
         students.sort((o1,o2)-> {
@@ -56,6 +56,8 @@ public class Main_std {
                return -1;
             } else{
                 return 0;
+                // Alice Charlie Alphabetically
+                //return o1.getName().compareTo(o2.getName());
             }
         });
         for(Student s: students){
