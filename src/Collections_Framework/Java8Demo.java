@@ -113,9 +113,6 @@ public class Java8Demo {
             List<String>names=Arrays.asList("A","B","C","D");
 
 
-
-
-
         }
         class MobilePhone{
         String name;
