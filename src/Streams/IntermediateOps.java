@@ -9,14 +9,12 @@ public class IntermediateOps {
         // Intermediate operations transforms a stream into another stream
         // They are lazy, meaning they don't execute until a terminal operations is invoked.
 
-        // Filter
         List<String> list= Arrays.asList("Akshit","Ram","Shyam","Ghanshyam","Akshit");
         Stream<String > v=list.stream().filter(x->x.startsWith("A"));
         // no filtering at this point
         long res=list.stream().filter(x->x.startsWith("A")).count();
         System.out.println(res);
 
-        // Map
         Stream<String> stringStream=list.stream().map(String::toUpperCase);
 
         // 3. sorted
