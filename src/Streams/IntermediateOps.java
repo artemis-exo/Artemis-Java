@@ -12,9 +12,10 @@ public class IntermediateOps {
         List<String> list= Arrays.asList("Akshit","Ram","Shyam","Ghanshyam","Akshit");
         Stream<String > v=list.stream().filter(x->x.startsWith("A"));
         // no filtering at this point
+        // 1. Filter
         long res=list.stream().filter(x->x.startsWith("A")).count();
         System.out.println(res);
-
+        // 2. Map
         Stream<String> stringStream=list.stream().map(String::toUpperCase);
 
         // 3. sorted
