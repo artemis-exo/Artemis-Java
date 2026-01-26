@@ -1,9 +1,11 @@
 package Streams;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class TerminalOps {
     public static void main(String[] args) {
@@ -63,5 +65,37 @@ public class TerminalOps {
         // stateful & stateless operation
         // stateless - one at a time , example- map()
         // stateful - have to know about everything, like sorted()
+
+        // 7. toArray()
+        Object [] array= Stream.of(1,2,3).toArray();
+
+        // 8. min / max
+        System.out.println("max: "+ Stream.of(2,44,69).max(Comparator.naturalOrder()).get());
+        System.out.println("min: "+ Stream.of(2,44,69).min(Comparator.naturalOrder()).get());
+        // Using lambda expression and Comparator
+        System.out.println("max: "+Stream.of(2,44,69).max((o1,o2)->o2-o1));
+
+        // 9. forEachOrdered
+         // using parallel stream , for ordering
+        List<Integer> numbers0= Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+        System.out.println("Using forEach with parallel strteam: ");
+        numbers0.parallelStream().forEach(System.out::println);
+        // Now using forEachOrdered
+        System.out.println(" Now Using forEachOrdered with parallel stream: ");
+        numbers0.parallelStream().forEachOrdered(System.out::println);
+
+
+        // Example
+        // Stream cannot be reused after a terminal operation has been called
+        Stream<String> stream=names.stream();
+        stream.forEach(System.out::println);
+       // List<String>list1=stream.map(String::toUpperCase).toList(); // exception
+
+
+
+
+
+
+
     }
 }
